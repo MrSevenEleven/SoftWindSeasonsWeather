@@ -1,0 +1,2 @@
+<!--components/icon.wxml-->
+<text class="icon-{{family}} icon-{{ type }}"></text>

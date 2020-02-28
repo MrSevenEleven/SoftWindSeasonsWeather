@@ -1,0 +1,259 @@
+page {
+  height: 100%; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.container {
+  margin-bottom: 20rpx;
+  max-width: 750rpx;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative; }
+
+icon {
+  font-size: 32rpx; }
+
+#effect {
+  width: 750rpx;
+  height: 768rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden; }
+
+.now {
+  height: 560rpx;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .now .location {
+    text-align: center;
+    font-size: 26rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 175px;
+    margin: 0 auto;
+    white-space: nowrap; }
+  .now .air-quality {
+    position: absolute;
+    left: 20rpx;
+    top: 60rpx;
+    height: 50rpx;
+    padding: 5rpx 20rpx;
+    border-radius: 8rpx;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 26rpx; }
+    .now .air-quality .circle {
+      width: 8rpx;
+      height: 30rpx;
+      margin-right: 14rpx;
+      vertical-align: middle;
+      border-radius: 4rpx;
+      display: inline-block;
+      content: ''; }
+    .now .air-quality .value {
+      vertical-align: middle; }
+  .now .now-weather {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+    line-height: 1; }
+    .now .now-weather .temp {
+      margin-bottom: 10rpx; }
+      .now .now-weather .temp text {
+        color: #fff;
+        font-weight: lighter;
+        font-family: helvetica-ultra-light;
+        font-size: 240rpx;
+        vertical-align: top;
+        display: inline-block; }
+      .now .now-weather .temp .degree {
+        font-size: 80rpx; }
+    .now .now-weather .cur-weather {
+      text-align: center;
+      font-size: 32rpx;
+      margin-bottom: 40rpx;
+      line-height: 1; }
+      .now .now-weather .cur-weather .inline {
+        margin-bottom: 30rpx;
+        font-size: 32rpx; }
+      .now .now-weather .cur-weather icon {
+        margin-right: 10rpx;
+        font-size: 32rpx; }
+      .now .now-weather .cur-weather .today {
+        display: flex;
+        flex-direction: row; }
+        .now .now-weather .cur-weather .today .item {
+          display: block;
+          flex: 1;
+          text-align: right;
+          padding: 0 16rpx;
+          font-size: 32rpx;
+          box-sizing: border-box; }
+          .now .now-weather .cur-weather .today .item:last-child {
+            text-align: left;
+            border-left: 2rpx solid rgba(255, 255, 255, 0.4); }
+
+.two-days {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx 0;
+  overflow: hidden;
+  width: 100%; }
+  .two-days .item {
+    font-size: 32rpx;
+    line-height: 32rpx;
+    padding: 0 40rpx;
+    width: 50%;
+    border-right: 2rpx solid rgba(255, 255, 255, 0.4); }
+    .two-days .item:last-child {
+      border-right: none; }
+    .two-days .item .top {
+      height: 24rpx;
+      margin-bottom: 26rpx; }
+      .two-days .item .top .date {
+        float: left; }
+      .two-days .item .top .temp {
+        float: right; }
+    .two-days .item .bottom {
+      height: 44rpx; }
+      .two-days .item .bottom text {
+        float: left;
+        height: 44rpx;
+        line-height: 44rpx; }
+    .two-days .item icon {
+      float: right;
+      font-size: 44rpx;
+      height: 44rpx;
+      width: 44rpx; }
+
+.weather .container {
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%; }
+.weather .container:last-child {
+  margin-bottom: 0; }
+
+.hourly .scrollX {
+  padding: 20rpx 0;
+  width: 928rpx;
+  height: 160rpx; }
+  .hourly .scrollX .item {
+    display: flex;
+    flex-direction: column;
+    width: 116rpx;
+    text-align: center;
+    float: left; }
+    .hourly .scrollX .item .time,
+    .hourly .scrollX .item .temp {
+      line-height: 28rpx;
+      height: 28rpx; }
+    .hourly .scrollX .item icon {
+      font-size: 48rpx;
+      margin: 5rpx auto 10rpx; }
+
+.week {
+  position: relative;
+  padding: 40rpx 0;
+  min-height: 200rpx; }
+  .week .week-weather {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; }
+    .week .week-weather .item {
+      text-align: center;
+      flex: 1; }
+      .week .week-weather .item .day,
+      .week .week-weather .item .date,
+      .week .week-weather .item .wind {
+        color: #efefef; }
+      .week .week-weather .item .wind {
+        font-size: 24rpx;
+        line-height: 24rpx;
+        height: 24rpx;
+        width: 80rpx;
+        margin: 0 auto 12rpx;
+        overflow: hidden; }
+      .week .week-weather .item .date {
+        margin: 10rpx 0 30rpx;
+        font-size: 24rpx; }
+      .week .week-weather .item .wt {
+        margin-bottom: 30rpx; }
+      .week .week-weather .item .night {
+        margin-top: 272rpx; }
+      .week .week-weather .item .night .wt {
+        margin: 32rpx 0 30rpx; }
+      .week .week-weather .item icon.img {
+        font-size: 38rpx;
+        display: block;
+        margin: 0 auto; }
+  .week .week-chart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 272rpx;
+    top: 262rpx; }
+
+.life-style {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .life-style .item {
+    text-align: center;
+    width: 25%;
+    height: 188rpx;
+    border-right: 2rpx solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    padding: 50rpx 0 0; }
+    .life-style .item .content {
+      font-size: 36rpx;
+      margin-top: 20rpx; }
+    .life-style .item .title {
+      color: #fff;
+      opacity: 0.7;
+      font-size: 24rpx;
+      height: 24rpx;
+      line-height: 24rpx; }
+      .life-style .item .title icon {
+        font-size: 24rpx;
+        margin-right: 10rpx;
+        margin-top: -2rpx; }
+
+.source {
+  opacity: .6;
+  color: #fff;
+  padding: 24rpx 0 40rpx;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap; }
+
+.open-setting {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .open-setting .lock {
+    width: 300rpx;
+    height: 300rpx;
+    line-height: 300rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .open-setting .lock icon {
+      font-size: 140rpx;
+      color: #fff; }
+
+/*# sourceMappingURL=index.wxss.map */
