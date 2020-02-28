@@ -1,2 +1,2 @@
-# softWindSeasonsWeather
+# SoftWindSeasonsWeather
 A wxprogram about weather
