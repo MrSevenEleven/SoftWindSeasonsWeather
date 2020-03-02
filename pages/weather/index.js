@@ -171,7 +171,7 @@ Page({
                 }
             });
             let code = parseInt(res.data.HeWeather6[0].now.cond_code);
-            // this.doCanvasEffect(code);//绘制天气canvas背景
+            this.doCanvasEffect(code);//绘制天气canvas背景
             return res;
         });
         // 预报

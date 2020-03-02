@@ -1,7 +1,8 @@
 <!--weather/index.wxml-->
 <wxs src="./index.wxs" module="utils"></wxs>
-<view class="wrapper" style="background: url({{backgroundImage}}) center -178rpx / 100% no-repeat;background-color: {{backgroundColor}}">
-  <view class="main-container" style="padding-top:{{paddingTop}}px">
+<view class="wrapper" style="background-color:{{backgroundColor}}">
+    <image src="{{backgroundImage}}" mode="widthFix"></image>
+    <view class="main-container" style="padding-top:{{paddingTop}}px">
     <canvas id="effect" canvas-id="effect" type="2d"></canvas>
     <view class="container" >
       <view class="now">
