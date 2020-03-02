@@ -25,7 +25,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.2",
-	"appid": "wx7436aacc3fd8a4d6",
+	"appid": "",
 	"projectname": "wxweather",
 	"debugOptions": {
 		"hidedInDevtools": []
