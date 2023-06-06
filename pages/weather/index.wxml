@@ -65,9 +65,9 @@
         <scroll-view scroll-x class="hourly">
           <view class="scrollX">
             <view class="item" wx:for="{{hourlyData}}" wx:key="index">
-              <text>{{item.time}}</text>
+              <text class="time">{{item.time}}</text>
               <icon type="{{item.icon}}"></icon>
-              <text>{{item.temp}}°</text>
+              <text class="temp">{{item.temp}}°</text>
             </view>
           </view>
 
@@ -82,10 +82,10 @@
               <view class="date">{{utils.formatDate(item.time)}}</view>
               <view class="dayweather">
                 <view class="wt">{{item.day}}</view>
-                <icon type="{{item.dayIcon}}"></icon>
+                <icon class='weathericon' type="{{item.dayIcon}}"></icon>
               </view>
               <view class="night">
-                <icon type="{{item.nightIcon}}"></icon>
+                <icon class='weathericon' type="{{item.nightIcon}}"></icon>
                 <view class="wt">{{item.night}}</view>
               </view>
               <view class="wind">{{ utils.wind(item.dayWind) }}</view>

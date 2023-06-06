@@ -8,21 +8,20 @@
   display: flex;
   flex-direction: column;
 }
-page{
+page {
   height: 100%;
 }
-.wrapper{
+.wrapper {
   width: 100%;
   height: 100%;
   position: relative;
 }
-image{
+image {
   width: 750rpx;
   position: absolute;
   top: -178rpx;
-
 }
-.main-container{
+.main-container {
   position: relative;
 }
 // 定义 container 间隔
@@ -47,13 +46,13 @@ icon {
   right: 0;
   overflow: hidden;
 }
-.now{
+.now {
   height: 560rpx;
   position: relative;
   top: 0;
   left: 0;
 
-  .location{
+  .location {
     text-align: center;
     font-size: 26rpx;
     overflow: hidden;
@@ -63,7 +62,7 @@ icon {
     white-space: nowrap;
   }
 
-  .air-quality{
+  .air-quality {
     position: absolute;
     left: 20rpx;
     top: 60rpx;
@@ -71,24 +70,24 @@ icon {
     padding: 5rpx 20rpx;
     border-radius: 8rpx;
     color: #fff;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, 0.1);
     font-size: 26rpx;
 
-    .circle{
+    .circle {
       width: 8rpx;
       height: 30rpx;
       margin-right: 14rpx;
       vertical-align: middle;
       border-radius: 4rpx;
       display: inline-block;
-      content: '';
+      content: "";
     }
-    .value{
+    .value {
       vertical-align: middle;
     }
   }
 
-  .now-weather{
+  .now-weather {
     position: absolute;
     top: 60%;
     left: 0;
@@ -96,9 +95,9 @@ icon {
     width: 100%;
     transform: translateY(-50%);
     line-height: 1;
-    .temp{
+    .temp {
       margin-bottom: 10rpx;
-      text{
+      text {
         color: #fff;
         font-weight: lighter;
         font-family: helvetica-ultra-light;
@@ -107,64 +106,62 @@ icon {
         display: inline-block;
       }
 
-      .degree{
+      .degree {
         font-size: 80rpx;
       }
     }
 
-    .cur-weather{
-      text-align:center;
+    .cur-weather {
+      text-align: center;
       font-size: 32rpx;
       margin-bottom: 40rpx;
       line-height: 1;
 
-      .inline{
+      .inline {
         margin-bottom: 30rpx;
         font-size: 32rpx;
       }
 
-      icon{
+      icon {
         margin-right: 10rpx;
         font-size: 32rpx;
       }
 
-      .today{
+      .today {
         @include flex-row;
-        .item{
+        .item {
           display: block;
           flex: 1;
           text-align: right;
           padding: 0 16rpx;
           font-size: 32rpx;
           box-sizing: border-box;
-          &:last-child{
+          &:last-child {
             text-align: left;
-            border-left: 2rpx solid rgba(255, 255, 255, .4);
+            border-left: 2rpx solid rgba(255, 255, 255, 0.4);
           }
         }
       }
     }
-
   }
-
 }
 
-.two-days{
+.two-days {
   @include flex-row;
   $gap: 24rpx;
   padding: $gap 0; // background: rgba(0, 0, 0, .1);
   overflow: hidden;
   width: 100%;
-  .item{
+  .item {
     font-size: 32rpx;
     line-height: 32rpx;
     padding: 0 40rpx;
     width: 50%;
-    border-right: 2rpx solid rgba(255, 255, 255, .4);
+    border-right: 2rpx solid rgba(255, 255, 255, 0.4);
     &:last-child {
       border-right: none;
     }
-    .top{
+    .top {
       height: 24rpx;
       margin-bottom: 26rpx;
 
@@ -196,22 +193,22 @@ icon {
 .weather {
   //background-color: #62aadc;
   .container {
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 100%;
   }
-  .container:last-child{
+  .container:last-child {
     margin-bottom: 0;
   }
 }
 
-.hourly{
-  .scrollX{
+.hourly {
+  .scrollX {
     padding: 20rpx 0;
-    width: 928rpx;
-    height: 160rpx;
+    width: 2784rpx;
+    height: 134rpx;
 
-    .item{
+    .item {
       @include flex-column;
       width: 116rpx;
       text-align: center;
@@ -228,19 +225,17 @@ icon {
         margin: 5rpx auto 10rpx;
       }
     }
-
   }
-
 }
 
-.week{
+.week {
   position: relative;
   padding: 40rpx 0;
   min-height: 200rpx;
-  .week-weather{
+  .week-weather {
     overflow: hidden;
-    @include  flex-row;
-    .item{
+    @include flex-row;
+    .item {
       //@include flex-column;
       //float: left;
       text-align: center;
@@ -260,11 +255,16 @@ icon {
         overflow: hidden;
       }
       .date {
-        margin: 10rpx 0 30rpx;
+        margin: 10rpx 0 18rpx;
         font-size: 24rpx;
       }
       .wt {
-        margin-bottom: 30rpx;
+        // margin-bottom: 30rpx;
+        height: 84rpx;
+        line-height: 42rpx;
+      }
+      .weathericon {
+        font-size: 38rpx;
       }
       .night {
         margin-top: 272rpx;
@@ -279,25 +279,24 @@ icon {
       }
     }
   }
-  .week-chart{
+  .week-chart {
     position: absolute;
     left: 0;
     right: 0;
     height: 272rpx;
-    top: 262rpx; // background: white;
+    top: 276rpx; // background: white;
   }
-
 }
 
-.life-style{
+.life-style {
   @include flex-row;
   flex-wrap: wrap;
-  .item{
+  .item {
     text-align: center;
     width: 25%;
     height: 188rpx;
-    border-right: 2rpx solid rgba(255, 255, 255, .1);
-    border-bottom: 2rpx solid rgba(255, 255, 255, .1);
+    border-right: 2rpx solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
     padding: 50rpx 0 0;
 
@@ -321,7 +320,7 @@ icon {
 }
 
 .source {
-  opacity: .6;
+  opacity: 0.6;
   color: #fff;
   padding: 24rpx 0 40rpx;
   text-align: center;
@@ -329,26 +328,32 @@ icon {
   white-space: nowrap;
 }
 
-.open-setting{
-  background-color: rgba(0,0,0,0.6);
-  width:100%;
+.open-setting {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
-  .lock{
+  .lock {
     width: 300rpx;
     height: 300rpx;
     line-height: 300rpx;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    icon{
+    icon {
       font-size: 140rpx;
       color: #fff;
     }
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
+  // width: 0;
+  // height: 0;
 }
